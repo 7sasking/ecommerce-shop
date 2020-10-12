@@ -1,0 +1,28 @@
+{
+  "name": "myproject",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Buy best products",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "env": "0.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "node": "^14.13.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Anas Dandashi",
+  "license": "MIT"
+}
